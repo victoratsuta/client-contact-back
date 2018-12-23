@@ -38,7 +38,7 @@ composer install
 php artisan key:generate
 ```
 ```
-php artisan migrate
+php artisan migrate --seed
 ```
 
 5\. Set `chmod 0777` for `/storage` and `/bootstrap` folders only if you have any troubles with access rights.
@@ -50,4 +50,5 @@ sudo chmod 0777 -R storage/
 
 ## Note
 
-You should to configure server, to setup both front and pack apps, to work with one domain
+You should to configure server, to setup both front and pack apps, to work with one domain.
+Also you should to run seeds in order to log in, and have some fake data.
